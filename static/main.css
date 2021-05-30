@@ -1,1 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+:root{
+    --primary-col: '#51F6D9'
+    --font-main: '#343434'
+    
+}
+
+body{
+    font-family: 'Work Sans';
+}
+.logo{
+    width: 192px;
+    height: auto;
+}
+
+ul{
+    display: flex;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 1rem;
+    color: var(--font-main);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+ul li:hover{
+    color: var(--primary-col);
+}
