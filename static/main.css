@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
 
+/*  keyframes */
+@keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+body{
+    -webkit-animation: modalopen 1.5s;
+    -moz-animation: modalopen 1.5s;
+    -ms-animation: modalopen 1.5s;
+    -o-animation: modalopen 1.5s;
+    animation: modalopen 1.5s;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -33,7 +51,7 @@ body{
     padding: 0;
 }
 .logo{
-    width: 200px;
+    width: 256px;
     height: auto;
     display: block;
   margin-left: auto;
@@ -41,7 +59,7 @@ body{
     
 }
 .logo-menu{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -245,6 +263,8 @@ table{
 
 #contact{
     text-align: center;
+    width: 30%;
+    margin: 0 auto;
 }
 
 .specialites{
@@ -294,4 +314,13 @@ table{
 
 .close-ico:hover{
     filter: invert(0.5);
+}
+
+.contact-link{
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-link:hover{
+    color: rgb(195, 195, 195);
 }
