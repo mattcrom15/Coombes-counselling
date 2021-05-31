@@ -8,6 +8,17 @@ html{
     --primary-col: #51F6D9;
     --font-main: #343434;
 }
+p{
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 500;
+}
+
+h3{
+    font-weight: 400;
+}
 
 
 body{
@@ -109,8 +120,7 @@ body{
 .content{
     margin-right: auto;
     margin-left: auto;
-    padding-left:3rem;
-    padding-right: 3rem;
+    
 }
 
 .wave-image{
@@ -124,16 +134,18 @@ body{
 }
 
 .treatment-approach{
-    display: flex;
-    margin: 0;
+    margin-bottom: 10rem;
+   
 }
 
-.treatment-approach img{
-    width: 45%;
+
+.girl-img{
+    width: 50%;
     height: auto;
-    margin-right: 3rem;
+    margin-right: 7.5rem;
     border-radius: 25px;
 }
+
 
 .laptop-img{
     width: 45%;
@@ -148,5 +160,15 @@ ul li::marker{
 .modailites-grid{
     display: grid;
     grid-template-columns: 20rem 20rem 20rem;
+    justify-items: center;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.wte-wave{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute; 
+    z-index: -3;
 }
