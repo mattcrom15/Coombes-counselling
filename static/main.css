@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -10,6 +10,7 @@ html{
 }
 p{
     font-weight: 400;
+    color: var(--font-main);
 }
 
 h1{
@@ -20,6 +21,10 @@ h3{
     font-weight: 400;
 }
 
+h4{
+    font-weight: 300;
+    font-size: 18px;
+}
 
 body{
     font-family: 'Work Sans';
@@ -107,13 +112,13 @@ body{
 
 .landing-about{
     display: flex;
-    margin-left: 3rem;
+    margin-left: 10rem;
     margin-right: 3rem;
 }
 
 .about-text{
     width: 33%;
-    margin-right: 15rem;
+    margin-right: 20rem;
     margin-top: 5rem;
 }
 
@@ -135,8 +140,14 @@ body{
 
 .treatment-approach{
     margin-bottom: 10rem;
+    
    
 }
+.treatment-content{
+    padding-top: 5rem;
+    width: 35%;
+}
+
 
 
 .girl-img{
@@ -148,9 +159,11 @@ body{
 
 
 .laptop-img{
-    width: 45%;
+    width: 60%;
     height: auto;
     border-radius: 25px;
+    float: right;
+
 }
 
 ul li::marker{
@@ -159,7 +172,7 @@ ul li::marker{
 
 .modailites-grid{
     display: grid;
-    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-columns: 25rem 25rem 25rem;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -171,4 +184,65 @@ ul li::marker{
     transform: scaleX(-1);
     position: absolute; 
     z-index: -3;
+}
+
+.wte-wave-03{
+    position: absolute;
+    z-index: -3;
+}
+
+.modalitie-icon{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 150px;
+}
+
+.modalitie-icon:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(19px 20px 25px rgba(0,0,0,0.05));
+}
+
+.price-box{
+    border: 1px solid var(--primary-col);
+    background: white;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+    box-shadow: 19px 20px 25px rgba(0,0,0,0.05);
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 10rem;
+
+}
+
+#expect{
+    margin-bottom: 20rem;
+}
+
+.td-title{
+    font-weight: 300;
+}
+
+table{
+    background: white;
+    border-radius: 25px;
+    padding: 3rem;
+    box-shadow: 19px 20px 25px rgba(0,0,0,0.05);
+    width: 600px;
+    float: right;
+}
+
+.td-time{
+    font-weight: 400;
+}
+
+.booking{
+    margin-bottom: 20rem;
+}
+
+#contact{
+    text-align: center;
+}
+
+.specialites{
+    padding-top: 5rem;
 }

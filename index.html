@@ -9,7 +9,7 @@
 <body>
     <div class="content">
         <div class="logo-menu">
-            <img src="static/imgs/wave_shape_04.png" alt="" class="wave-image">
+            <img src="static/imgs/wave_shape_04.png" alt="" class="wave-image" id=wave01>
             <img src="static/imgs/Coombes_Counselling_logo.png" alt="Coombes Counselling Logo" class="logo">
             <nav>
                 <ul class="menu">
@@ -33,10 +33,10 @@
             <img src="static/imgs/Website image 2.png" alt="Rachel Coombes Profile" class="profile-image">
         </div>
         <div class="treatment-approach">
-            <img src="static/imgs/wave_shape.png" style="position: absolute; z-index: -3;"  alt="">
+            <img src="static/imgs/wave_shape.png" style="position: absolute; z-index: -3;" id="wave02"  alt="">
             <div style="display: flex; padding-top: 25rem;">
                 <img src="static/imgs/girl_on_computer.jpg" class="girl-img" alt="Woman Video call on Laptop">
-                <div style="width: 35%;"  id="treatment-approach">
+                <div class="treatment-content"  id="treatment-approach">
                     <h1>Treatment approach</h1>
                     <p>
                     I trained in the Integrative approach to counselling and psychotherapy which brings together different elements of specific therapies. I take the view that there is no single approach that can treat each client in all situations but rather, each person should be considered as a whole, using counselling techniques tailored to each individuals need and personal circumstances. 
@@ -48,18 +48,18 @@
             </div>
         </div>
         <div class="modalities">
-            <img src="static/imgs/wave_shape_02.png" style="position: absolute; z-index: -2;" alt="">
-            <h3>I draw on a variety of modalities including...</h3>
+            <img src="static/imgs/wave_shape_02.png" style="position: absolute; z-index: -2;" id="wave03" alt="">
+            <h3 style="margin-left: 10rem;">I draw on a variety of modalities including...</h3>
             <div class="modailites-grid">
-                <img src="static/imgs/ICON_Integrative.png" alt="" srcset="">
-                <img src="static/imgs/ICON_Person_centered.png" alt="" srcset="">
-                <img src="static/imgs/ICON_cognitive.png" alt="" srcset="">
+                <img src="static/imgs/ICON_Integrative.png" alt="" srcset="" class="modalitie-icon">
+                <img src="static/imgs/ICON_Person_centered.png" alt="" srcset="" class="modalitie-icon">
+                <img src="static/imgs/ICON_cognitive.png" alt="" srcset="" class="modalitie-icon">
                 <p>Integrative</p>
                 <p>Person Centered</p>
                 <p>Cognitive Behavioural Therapy(CBT)</p>
-                <img src="static/imgs/ICON_Gestalt_therapy.png" alt="" srcset="">
-                <img src="static/imgs/ICON_Solution_focused_brief.png" alt="" srcset="">
-                <img src="static/imgs/ICON_transactional.png" alt="" srcset="">
+                <img src="static/imgs/ICON_Gestalt_therapy.png" alt="" srcset="" class="modalitie-icon">
+                <img src="static/imgs/ICON_Solution_focused_brief.png" alt="" srcset="" class="modalitie-icon">
+                <img src="static/imgs/ICON_transactional.png" alt="" srcset="" class="modalitie-icon">
                 <p>Gestalt Therapy</p>
                 <p>Solution Focused Brief Therapy</p>
                 <p>Transactional analysis</p>
@@ -72,7 +72,7 @@
                 <h3 style="margin-right: 2rem;">Anxiety</h3>
                 <h3>Self Esteem</h3>
             </div>
-            <div style="display: flex; justify-content: center;">
+            <div style="display: flex; justify-content: center; margin-bottom: 5rem;">
                 <ul>
                     <li>Alcohol Use</li>
                     <li>Alzheimer's</li>
@@ -111,11 +111,16 @@
                     <li>Work Problems</li>
                 </ul>
             </div>
+            <div style="text-align: center;">
+                <h1>Client Focus</h1>
+                <p>Individual sessions for Adults (18+) & Elders (65+).</p>
+                <p>I currently offer telephone sessions as well as online via webcam using software called zoom.</p>
+            </div>
         </div>
         <div id="expect">
-            <img src="static/imgs/wave_shape.png"  class="wte-wave"  alt="">
-            <div style="display: flex;">
-                <div>
+            <img src="static/imgs/wave_shape.png"  class="wte-wave" id="wave04"  alt="">
+            <div style="display: flex; padding-top: 20rem">
+                <div style="width: 35%; padding-left: 10rem; margin-right: 10rem; padding-top: 5rem;">
                     <h1>What to Expect</h1>
                     <p>Our first free initial telephone consultation is quite informal and lasts approximately 15 – 30 minutes. This will be a chance for us to discuss your needs and reasons for counselling, as well as your expectations and what you would like to achieve from our sessions together including any goals you may have. </p>
                     <p>Once you have decided to go ahead with the therapy sessions we will arrange to meet on a regular day and time for 50 minutes either online or by telephone. I would usually advise weekly sessions to begin with as through my own experience and many years of research generally in the field of psychology it has been shown that the consistency of weekly sessions can give us better results. 
@@ -126,8 +131,9 @@
                 </div>
                 <img src="static/imgs/man_on_computer.jpg" alt="man using laptop" srcset="" class="laptop-img">
             </div>
+            <img src="static/imgs/wave_shape_03.png"  class="wte-wave-03" id="wave05"  alt="">
         </div>
-        <div style="display: flex; justify-content: center;">
+        <div style="display: flex; justify-content: center; margin-bottom: 20rem;">
             <div>
                 <h1>Qualifications</h1>
                 <img src="static/imgs/BACP Logo - 183417.png" alt="BACP Member number" srcset=""width="230px">
@@ -149,33 +155,74 @@
             </div>
         </div>
         <div>
-            <h1 style="text-align: center;"  id="booking">Pricing</h1>
+            <h1 style="text-align: center; padding-top:10rem;"  id="booking">Pricing</h1>
             <div style="display: flex; justify-content: center">
                 <div class="price-box">
                     <h4>Initial Phone Consultation</h4>
-                    <p>15-30 minutes</p>
-                    <h4>Free</h4>
+                    <p style="font-weight: 300;font-size: 16px;">15-30 minutes</p>
+                    <h4><strong>Free</strong></h4>
                 </div>
                 <div class="price-box">
                     <h4>Individual Counselling Session</h4>
-                    <p>50 minutes</p>
+                    <p style="font-weight: 300;font-size: 16px;">50 minutes</p>
                     <h4><strong>£45</strong></h4>
                 </div>
             </div>
         </div>
         <div class="booking">
-            <div>
-                <h1 style="text-align: center;">Booking Availability</h1>
-                <p>Please see my booking availability to arrange an initial free consultation. If there is anything further you need to ask me regarding appointments and how I might help you, please email me and I will get back to you as soon as possible.
-                </p>
+            <img src="static/imgs/wave_shape.png" class="wte-wave-03" id="wave06" alt="" srcset="">
+            <div style="display: flex; padding-top: 17
+            rem;">
+                <div style="width: 35%; padding-left: 10rem; margin-right: 15rem;">
+                    <h1>Booking Availability</h1>
+                    <p>Please see my booking availability to arrange an initial free consultation. If there is anything further you need to ask me regarding appointments and how I might help you, please email me and I will get back to you as soon as possible.
+                    </p>
+                </div>
+                    <table>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td class="td-title">Daytime</td>
+                            <td class="td-title">Evening</td>
+                          </tr>
+                          <tr>
+                            <td class="td-title">Monday</td>
+                            <td></td>
+                            <td clas="td-time">5pm - 9pm</td>
+                          </tr>
+                          <tr>
+                            <td class="td-title">Tuesday</td>
+                            <td clas="td-time">10am-2pm</td>
+                            <td clas="td-time">5pm - 9pm</td>
+                          </tr>
+                          <tr>
+                            <td class="td-title">Wednesday</td>
+                            <td clas="td-time">10am-2pm</td>
+                            <td clas="td-time">5pm - 9pm</td>
+                          </tr>
+                          <tr>
+                            <td class="td-title">Saturday</td>
+                            <td clas="td-time">10am - 1pm</td>
+                          </tr>
+                        </tbody>
+                      </table>
             </div>
-            <div></div>
         </div>
         <div style="text-align: center;" id="contact">
+            <img src="static/imgs/Coombes_Counselling_logo.png" alt="Coombes Counselling Logo" class="logo">
             <h1>contact</h1>
-            <p>If there is anything else, you would like to know please just ask me. I will endeavour to get back to you asap and within 24 hours of your initial contact.
+            <p style="width: 50%;">If there is anything else, you would like to know please just ask me. I will endeavour to get back to you asap and within 24 hours of your initial contact.
             </p>
-
+            <div style="display: flex; justify-content: center; text-align: center;">
+                <div>
+                    <h3>Phone</h3>
+                    <a href="tel:07545977234" class="contact-link">07545977234</a>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:rachel@coombescounselling.co.uk " class="contact-link">rachel@coombescounselling.co.uk</a>
+                </div>
+            </div>
         </div>
     </div>
     
