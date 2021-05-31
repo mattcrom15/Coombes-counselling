@@ -71,8 +71,11 @@ body{
     border-color: rgb(195, 195, 195);
     margin: 0rem 34rem;
     padding-bottom: 1rem;
+}
 
-
+.hamburger{
+    display: none;
+    cursor: pointer;
 }
 
 .menu a{
@@ -152,6 +155,7 @@ body{
 
 .wave-image{
     position: absolute;
+    width: 100%;
     z-index: -1;
 }
 
@@ -210,6 +214,7 @@ ul li::marker{
 
 .wte-wave-03{
     position: absolute;
+    width: 100%;
     z-index: -3;
 }
 
@@ -326,26 +331,32 @@ table{
 }
 
  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
-
+@media (max-width: 576px) {  
+    
 }
 
  /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
+    .hamburger{
+        display: inline;
+    }
 
+    .menu{
+        display: none;
+    }
 }
 
  /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-
+@media (max-width: 992px) {  
+    
 }
 
 /* / X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
+@media (max-width: 1200px) {  
 
 }
 
  /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  
+@media (max-width: 1400px) {  
     
 }
