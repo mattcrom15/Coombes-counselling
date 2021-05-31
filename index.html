@@ -51,15 +51,15 @@
             <img src="static/imgs/wave_shape_02.png" style="position: absolute; z-index: -2;" id="wave03" alt="">
             <h3 style="margin-left: 10rem;">I draw on a variety of modalities including...</h3>
             <div class="modailites-grid">
-                <img src="static/imgs/ICON_Integrative.png" alt="" srcset="" class="modalitie-icon">
-                <img src="static/imgs/ICON_Person_centered.png" alt="" srcset="" class="modalitie-icon">
-                <img src="static/imgs/ICON_cognitive.png" alt="" srcset="" class="modalitie-icon">
+                <img src="static/imgs/ICON_Integrative.png" alt="" onclick="OpenModal('Integrative');" class="modalitie-icon">
+                <img src="static/imgs/ICON_Person_centered.png" alt="" onclick="OpenModal('Person Centered');" class="modalitie-icon">
+                <img src="static/imgs/ICON_cognitive.png" alt="" onclick="OpenModal('Cognitive Behavioural Therapy(CBT)');" class="modalitie-icon">
                 <p>Integrative</p>
                 <p>Person Centered</p>
                 <p>Cognitive Behavioural Therapy(CBT)</p>
-                <img src="static/imgs/ICON_Gestalt_therapy.png" alt="" srcset="" class="modalitie-icon">
-                <img src="static/imgs/ICON_Solution_focused_brief.png" alt="" srcset="" class="modalitie-icon">
-                <img src="static/imgs/ICON_transactional.png" alt="" srcset="" class="modalitie-icon">
+                <img src="static/imgs/ICON_Gestalt_therapy.png" alt="" onclick="OpenModal('Gestalt Therapy');" class="modalitie-icon">
+                <img src="static/imgs/ICON_Solution_focused_brief.png" alt="" onclick="OpenModal('Solution Focused Brief Therapy');" class="modalitie-icon">
+                <img src="static/imgs/ICON_transactional.png" alt="" onclick="OpenModal('Transactional analysis');" class="modalitie-icon">
                 <p>Gestalt Therapy</p>
                 <p>Solution Focused Brief Therapy</p>
                 <p>Transactional analysis</p>
@@ -225,7 +225,13 @@
             </div>
         </div>
     </div>
-    
+    <div class="modal">
+        <div class="modal-dialog">
+            <img src="static/imgs/x.svg" alt="" class="close-ico" onclick="CloseModal();">
+            <h1 id="modal-title"></h1>
+            <p id="modal-content"></p>
+        </div>
+    </div>
     <script src="static/script.js"></script>
 </body>
 </html>
