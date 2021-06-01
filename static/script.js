@@ -37,3 +37,15 @@ modal_box.addEventListener('click',function(){
     CloseModal();
 });
 
+
+function OpenMenu(){
+    hburger = document.querySelector('.hamburger');
+    s = hburger.getAttribute('status');
+    menu = document.querySelector('.menu')
+    if (s == 'closed'){
+        console.log('menu is closed');
+        menu.style.display = 'block';
+        
+        
+    }
+}

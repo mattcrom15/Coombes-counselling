@@ -75,7 +75,7 @@ body{
 
 .hamburger{
     display: none;
-    cursor: pointer;
+    
 }
 
 .menu a{
@@ -406,11 +406,26 @@ table{
  /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
     .hamburger{
+        cursor: pointer;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
         display: inline;
+    }
+
+    nav{
+        position: fixed;
+        height: 100%;
+        z-index: 100;
     }
 
     .menu{
         display: none;
+        margin: 0;
+        background: white;
+        width: 100%;
+        height: 100%;
+        position: fixed;
     }
 
     .landing-about{
@@ -521,12 +536,11 @@ table{
 
     .booking-content{
         flex-direction: column;
-        padding-top: 5rem;
+        padding-top: 10rem;
     }
 
     .booking-text{
         padding:0;
-        padding: 0 2rem;
         text-align: center;
         width: 100%;
         margin: 0;
@@ -539,7 +553,6 @@ table{
     #contact{
         margin: 0;
         width: 100%;
-        padding: 0 1rem;
         
     }
 
@@ -555,7 +568,14 @@ table{
      .contact-link{
          margin-bottom: 2rem;
      }
+
+     .booking-text p{
+         padding: 0 2rem;
+     }
     
+     #contact p{
+         padding: 0 2rem;
+     }
 
 }
 
