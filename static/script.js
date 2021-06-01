@@ -44,8 +44,21 @@ function OpenMenu(){
     menu = document.querySelector('.menu')
     if (s == 'closed'){
         console.log('menu is closed');
+        hburger.setAttribute('status','open')
         menu.style.display = 'block';
         
         
+    } else {
+        console.log('menu is open');
+        hburger.setAttribute('status','closed')
+        menu.style.display = 'none';
+
     }
+}
+
+function CloseMenu(){
+    hburger = document.querySelector('.hamburger');
+    hburger.setAttribute('status','closed')
+    menu.style.display = 'none';
+
 }
