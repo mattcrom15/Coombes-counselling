@@ -46,6 +46,7 @@ function OpenMenu(){
         console.log('menu is closed');
         hburger.setAttribute('status','open')
         menu.style.display = 'block';
+        menu.style.margin = 0;
         
         
     } else {

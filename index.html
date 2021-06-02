@@ -21,11 +21,11 @@
             <nav>
                 <img src="static/imgs/menu.svg" alt="" class="hamburger" status="closed" onclick="OpenMenu();">
                 <ul class="menu">
-                    <a href="#treatment-approach" onclick="CloseMenu();"><li>Treatment Approach</li></a>
-                    <a href="#specialites" onclick="CloseMenu();"><li>Specialities</li></a>
-                    <a href="#expect" onclick="CloseMenu();"><li>What to expect</li></a>
-                    <a href="#booking" onclick="CloseMenu();"><li>Fees & booking</li></a>
-                    <a href="#contact" onclick="CloseMenu();"><li>Contact</li></a>
+                    <a href="#treatment-approach" onclick="CloseMenu();"><li class="menu-item">Treatment Approach</li></a>
+                    <a href="#specialites" onclick="CloseMenu();"><li class="menu-item">Specialities</li></a>
+                    <a href="#expect" onclick="CloseMenu();"><li class="menu-item">What to expect</li></a>
+                    <a href="#booking" onclick="CloseMenu();"><li class="menu-item">Fees & booking</li></a>
+                    <a href="#contact" onclick="CloseMenu();"><li class="menu-item">Contact</li></a>
                 </ul>
             </nav>
         </div>
@@ -59,18 +59,30 @@
             <img src="static/imgs/wave_shape_02.png" class="waves" id="wave03" alt="">
             <h3 class="modalitiy-title">I draw on a variety of modalities including...</h3>
             <div class="modailites-grid">
-                <img src="static/imgs/ICON_Integrative.png" alt="" onclick="OpenModal('Integrative');" class="modalitie-icon">
-                <img src="static/imgs/ICON_Person_centered.png" alt="" onclick="OpenModal('Person Centered');" class="modalitie-icon">
-                <img src="static/imgs/ICON_cognitive.png" alt="" onclick="OpenModal('Cognitive Behavioural Therapy(CBT)');" class="modalitie-icon">
-                <p>Integrative</p>
-                <p>Person Centered</p>
-                <p>Cognitive Behavioural Therapy(CBT)</p>
-                <img src="static/imgs/ICON_Gestalt_therapy.png" alt="" onclick="OpenModal('Gestalt Therapy');" class="modalitie-icon">
-                <img src="static/imgs/ICON_Solution_focused_brief.png" alt="" onclick="OpenModal('Solution Focused Brief Therapy');" class="modalitie-icon">
-                <img src="static/imgs/ICON_transactional.png" alt="" onclick="OpenModal('Transactional analysis');" class="modalitie-icon">
-                <p>Gestalt Therapy</p>
-                <p>Solution Focused Brief Therapy</p>
-                <p>Transactional analysis</p>
+                <div style="text-align: center;">
+                    <img src="static/imgs/ICON_Integrative.png" alt="" onclick="OpenModal('Integrative');" class="modalitie-icon">
+                    <p>Integrative</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="static/imgs/ICON_Person_centered.png" alt="" onclick="OpenModal('Person Centered');" class="modalitie-icon ">
+                    <p>Person Centered</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="static/imgs/ICON_cognitive.png" alt="" onclick="OpenModal('Cognitive Behavioural Therapy(CBT)');" class="modalitie-icon">
+                    <p>Cognitive Behavioural Therapy(CBT)</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="static/imgs/ICON_Gestalt_therapy.png" alt="" onclick="OpenModal('Gestalt Therapy');" class="modalitie-icon">
+                    <p>Gestalt Therapy</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="static/imgs/ICON_Solution_focused_brief.png" alt="" onclick="OpenModal('Solution Focused Brief Therapy');" class="modalitie-icon ">
+                    <p>Solution Focused Brief Therapy</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="static/imgs/ICON_transactional.png" alt="" onclick="OpenModal('Transactional analysis');" class="modalitie-icon">
+                    <p>Transactional analysis</p>
+                </div>
             </div>
         </div>
         <div class="specialites" id="specialites">
@@ -232,6 +244,7 @@
                     <a href="mailto:rachel@coombescounselling.co.uk " class="contact-link">rachel@coombescounselling.co.uk</a>
                 </div>
             </div>
+            <footer><a class="contact-link" href="#">back to top</a></footer>
         </div>
     </div>
     <div class="modal">
