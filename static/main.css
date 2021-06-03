@@ -320,12 +320,13 @@ table{
 
 .modal-dialog{
     background-color: white;
-    width: 500px;
-    position: absolute;
-    margin: 10% 35%;
+    width: 50%;
+    margin: 25vh auto;
+    position: relative;
     box-shadow: 19px 20px 25px rgba(0,0,0,0.05);
     border-radius: 25px;
     padding: 3rem;
+    
     
 }
 
@@ -493,6 +494,11 @@ table{
         grid-template-columns: 25rem;
     }
 
+    .modal-dialog{
+        margin: 5rem auto;
+        font-size: 12px;
+    }
+
     .specialites-grid{
         display: inline;
     }
@@ -568,10 +574,7 @@ table{
         
     }
 
-    .modal-dialog{
-        width: 250px;
-        margin: 0 auto;
-    }
+
 
     .phone-email{
         flex-direction: column;   
