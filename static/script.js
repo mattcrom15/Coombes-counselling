@@ -37,3 +37,29 @@ modal_box.addEventListener('click',function(){
     CloseModal();
 });
 
+
+function OpenMenu(){
+    hburger = document.querySelector('.hamburger');
+    s = hburger.getAttribute('status');
+    menu = document.querySelector('.menu')
+    if (s == 'closed'){
+        console.log('menu is closed');
+        hburger.setAttribute('status','open')
+        menu.style.display = 'block';
+        menu.style.margin = 0;
+        
+        
+    } else {
+        console.log('menu is open');
+        hburger.setAttribute('status','closed')
+        menu.style.display = 'none';
+
+    }
+}
+
+function CloseMenu(){
+    hburger = document.querySelector('.hamburger');
+    hburger.setAttribute('status','closed')
+    menu.style.display = 'none';
+
+}
